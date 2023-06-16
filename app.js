@@ -153,7 +153,7 @@ for(let i = 1; i <=100; i++) {
 
 console.log("My bank account for double pay has " + bank_account + " dollars!");
 
-//ARRAYS & CONTROL FLOW
+//                III. ARRAYS & CONTROL FLOW
 /* A. Talk about it:
    What are the things in an array called?
       The thiings inside an array are called an item or element.
@@ -268,7 +268,7 @@ const thomsCloset = [
 //What's Kristyn wearing today?
 console.log("Kristyn is rocking that " + kristynCloset[2] + " today!") //3rd thing in Kristyn's closet
 kristynCloset.splice(6, 0, "raybans"); //puts raybans at index 6 using .splice
-kristynsCloset[5] = "stained knit hat"; //element 6 or index 5 is now "stained..."
+kristynCloset[5] = "stained knit hat"; //element 6 or index 5 is now "stained..."
 
 //Thom's array
 //3. Thom's outfit
@@ -280,7 +280,7 @@ console.log("Thom is rocking it wearing his " + shirtThom + ", " + pantsThom + "
 
 
 thomsCloset[1][2] = "Footie Pajamas";
-console.log(thomasCloset[1][2]);
+console.log(thomsCloset[1][2]);
 
 
 
@@ -374,7 +374,10 @@ function printLongestWord (Arr) {
 }
 
 console.log(printLongestWord(["Bojack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
-//OBJECTS
+
+
+
+//                            OBJECTS
 
 // A. Make a user object
 
@@ -420,23 +423,23 @@ console.log(user.friend.purchased[1])
 
 // F. Loops
 
-for(let i = 0; i <user.purchased.legth; i++) {     // users purchased array
+for(let i = 0; i <user.purchased.length; i++) {     // users purchased array
    console.log (user.purchased[i])                 //logs users purchased array
 }
-for(let i = 0; i <user.friend.purchased.legth; i++) {   //friends purchased array
+for(let i = 0; i <user.friend.purchased.length; i++) {   //friends purchased array
    console.log (user.friend.purchased[i])               //logs friends purchased arrays
 }
 
 // G. Function can operate on objects
 
 function updateUser () {
-   user.age = user.age + 1;
-   user.name = user.name[0].toUpperCase;
+   user.age++;
+   user.name = user.name.toUpperCase();
 }
 
-function oldAndLoud () {
-   person.age = person.age + 1;
-   person.name = person.name[0].toUpperCase;
+function oldAndLoud (person) {
+   person.age++;
+   person.name = person.name.toUpperCase();
 }
 
 oldAndLoud(user);
